@@ -28,3 +28,11 @@ while opc != 4:
 
     elif opc== 3:
         retiro = float(input("Ingresa la cantidad de dinero que deseas retirar: "))
+
+        if retiro > sal:
+            print("Fondos insuficientes.")
+        elif retiro <= 0:
+            print("dinero inválido.")
+        else:
+            sal -= retiro
+            print("Tu retiro fue realizado correctamente.")
