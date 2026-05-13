@@ -11,3 +11,20 @@ while opc != 4:
     print("2. Depositar dinero")
     print("3. Retirar dinero")
     print("4. Salir")
+
+    opc = int(input("Selecciona una opción: "))
+
+    if opc == 1:
+        print("Tu saldo actual es:", sal)
+
+    elif opc == 2:
+        deposito = float(input("Ingresa la cantidad de dinero que deseas depositar: "))
+        
+        if deposito > 0:
+            sal += deposito
+            print("TU depósito fue realizado correctamente.")
+        else:
+            print("dinero inválido.")
+
+    elif opc== 3:
+        retiro = float(input("Ingresa la cantidad de dinero que deseas retirar: "))
